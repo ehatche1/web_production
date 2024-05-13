@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Egypt's Baking Recipes</title>
+    <link href="website/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Egypt's Baking Recipes</h1>
+    <h2>Find delicious recipes</h2>
+
+    <div id="mobileNav">
+      <div class="mobileNavBar">
+        <div id="moreInfo">Find out more</div>
+        <div id="buttonDiv">
+          <button id="button" onclick="myDropdownFunction()">&#9776;</button>
+        </div>
+      </div>
+
+      <div id="theLinks">
+        <a href="#recipes">Recipes</a>
+        <a href="website/about_me.html">About me</a>
+        <a href="website/web_poem.html">See more</a>
+        <a href="website/contact.html">Send an inquiry</a>
+        <a href="website/gallery.html">Photo gallery</a>
+        <a href="website/midterm/index.html">Midterm Project</a>
+        <a href="website/final/index.html">Final Project</a>
+      </div>
+    </div>
+
+    <!--comment here-->
+    <img
+      src="https://newgenbaker.com/wp-content/uploads/2019/03/food-3048440_960_720.jpg"
+      alt="baking img"
+      width="400"
+      height="300"
+    />
+    <script>
+      function myDropdownFunction() {
+        var linksDiv = document.getElementById("theLinks");
+        if (linksDiv.style.display === "block") {
+          linksDiv.style.display = "none";
+        } else {
+          linksDiv.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

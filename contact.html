@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send an inquiry</title>
+    <style>
+      .div2 {
+        font-family: "Kalnia", serif;
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: 200;
+        width: 50%;
+        height: 50vh;
+        margin: auto;
+      }
+
+      form {
+        background-color: pink;
+        padding: 15px 30px;
+        border-radius: 6px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        transform: rotate(20deg);
+        transition: transform 2s;
+      }
+
+      form:hover {
+        transform: rotate(0deg);
+      }
+
+      .inputFields {
+        display: block;
+        margin: auto;
+      }
+
+      .button2 {
+        background-color: lightblue;
+
+        padding: 15px 30px;
+        border: none;
+        font-size: 16px;
+        margin-left: 5px;
+        border-radius: 6px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div2">
+      <form
+        action="mailto:YOUREMAILADDRESS@gmail.com?subject=Inquiry"
+        target="_blank"
+        method="post"
+        enctype="text/plain"
+      >
+        <p>INQUIRY FORM</p>
+        <p>Please use the form below to send an inquiry</p>
+        <input
+          class="inputFields"
+          type="text"
+          name="name"
+          placeholder="Your name here"
+        />
+        <input
+          class="inputFields"
+          type="text"
+          name="phone"
+          placeholder="Phone Number"
+        />
+        <input
+          class="inputFields"
+          type="text"
+          name="email"
+          placeholder="Email Address"
+        />
+        <textarea
+          class="inputFields"
+          rows="4"
+          name="comments"
+          placeholder="Your comments"
+        ></textarea>
+        <br />
+        <input type="checkbox" name="response1" value="Phone call" />
+        <label for="response1">Call </label>
+        <br />
+        <input type="checkbox" name="response2" value="Email" />
+        <label for="response2">Email </label>
+        <br />
+        <br />
+        <button class="button2" type="submit">Send</button>
+      </form>
+      <footer>
+        <em> back to <a href="index.html" target="_blank"> homepage </a> </em>
+      </footer>
+    </div>
+  </body>
+</html>
