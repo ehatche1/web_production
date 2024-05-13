@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <!--<body>
+        <div id="mobileNav">
+          <div class="mobileNavBar">
+              <div id="siteName">
+                  Egypt's Website
+              </div>
+              <div id="hamburgerDiv">
+                  <a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                  <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+              </div>
+
+          </div>
+
+          <div id="theLinks">
+              <a href="recipesPage.html">Recipes</a>
+              <a href="myContactPage.html">Contact</a>
+              <a href="myAboutPage.html">About</a>
+          </div>
+		</div>
+
+        <div class="mainDiv">
+            <div>
+				This website will share fun and easy recipes for those who love baking and exploring new culinary experiences.
+			</div>
+        </div>
+    </body>
+</html>
+
+<style>
+	body {
+		margin: 0px;
+	}
+	
+	#mobileNav {
+			display: none;
+		}
+	
+	@media only screen and (max-width: 768px) {
+		#mobileNav {
+			display: block;
+		}
+	}
+	
+    .mobileNavBar {
+        background-color: #EBCBFE;
+        position: relative;
+        border: 1px solid;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #siteName {
+      
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    #hamburgerDiv {
+       
+        align-self: center;                
+    }
+
+    #hamburgerBtn {
+        background-color: white;
+        font-size: 32px;
+        border: 1px solid;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #theLinks {
+        background-color: white;
+        display: none;
+        text-align: center;
+    }
+
+    #theLinks a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .mainDiv {
+        background-color:mediumpurple;
+		display: grid;
+        height: 50vh;
+    }
+</style>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>

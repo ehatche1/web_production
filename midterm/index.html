@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="boho.css" rel="stylesheet" type="text/css" />
+    <link href="tropical.css" rel="stylesheet" type="text/css" />
+    <link href="costal.css" rel="stylesheet" type="text/css" />
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Marck+Script&family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+   
+    <title>Interior Design Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        INTERIOR <br />
+        DESIGN
+      </h1>
+      <div id="mobileNav">
+        <div class="mobileNavBar">
+          <div id="moreInfo">BROWSE OUR STYLES</div>
+          <div id="buttonDiv">
+            <button id="button" onclick="myDropdownFunction()">&#9776;</button>
+          </div>
+        </div>
+
+        <div id="theLinks">
+          <a href="boho.html">Boho Chic</a>
+         
+          <a href="tropical.html">Tropical maximalist</a>
+          <a href="costal.html">Coastal cottage</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+     
+        <img
+          src="https://yourforest.ua/image/site/country_change.jpg"
+          class="picture-1"
+        />
+      </a>
+
+      <div class="grid">
+        <img
+          src="https://i.pinimg.com/564x/08/5d/da/085dda742e5c7a81288570a0aa70fca9.jpg"
+        />
+        <img
+          src="https://i.pinimg.com/564x/4c/19/50/4c1950a37b35b2300ad40dbf47828f15.jpg"
+        />
+        <img
+          src="https://i.pinimg.com/564x/c9/6d/44/c96d44e9b98277094039f044dc9c26ef.jpg"
+        />
+        <img
+          src="https://i.pinimg.com/564x/0a/d4/9f/0ad49f0fc1e3e05b92deb7ad28a1f8e1.jpg"
+        />
+      </div>
+    
+    <footer>
+      Coded by
+      <a href="https://github.com/ehatche1" target="_blank"> Egypt Hatchett </a>
+    </footer>
+   </div>
+    <script>
+      function myDropdownFunction() {
+        var linksDiv = document.getElementById("theLinks");
+        if (linksDiv.style.display === "block") {
+          linksDiv.style.display = "none";
+        } else {
+          linksDiv.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
